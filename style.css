@@ -1,0 +1,181 @@
+/** Alices Restaurant **/
+
+/* Adobe fonts */
+@import url("https://use.typekit.net/vev2uxc.css");
+/* font-family: futura-pt, sans-serif; font-weight: 300; font-style: italic; */
+@import url("https://use.typekit.net/vev2uxc.css");
+/* font-family: futura-pt-medium-oblique, sans-serif; font-weight: 500; font-style: italic; */
+@import url("https://use.typekit.net/iet2zpy.css");
+/* font-family: 'franklin-gothic-urw', sans-serif; font-weight: 300; font-style: normal; */
+
+
+/* Variabler */
+:root{
+
+  /* farver */
+--white: #efe9e2;
+--offwhite: #faf0dc;
+--brown: #312113;
+--green: #d8ffca;
+--black: #241B16;
+--brown: #312113;
+
+/* Fonte */
+--overskrift: 'futura-pt-medium-oblique', sans-serif; /*overskrifter */
+--brødtekst: 'franklin-gothic-urw', sans-serif; /*brødtekst */
+}
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+h1{
+  font-family: var(--overskrift);
+  font-size: 35px;
+  padding-left: 30%;
+  padding-right: 30%;
+  padding-bottom: 10px;
+  padding-top: 30px;
+}
+
+h2{
+  color: var(--brown);
+  font-family: 'futura-pt';
+  padding-left: 10px;
+  padding-bottom: 10px;
+}
+
+p{
+  font-family: Var(--brødtekst);
+  padding-left: 10px;
+  padding-bottom: 45px;
+}
+
+
+header,
+footer {
+  background-color: black;
+  color: var(--offwhite);
+  text-align: center;
+  min-height: 45px;
+  padding-top: 23px;
+  padding-bottom: 23px;
+}
+
+main {
+  background-color: var(--offwhite);
+  display: flex;
+  justify-content: space-between;
+  padding-top: 80px;
+  padding-left: 38%;
+  padding-right: 20%;
+  box-sizing: border-box;
+  text-align:
+}
+
+/* resp. images */
+img {
+  max-width: 100%;
+}
+
+.resp-img {
+  width: 100%;
+}
+
+
+/* Navbar */
+nav {
+  background-color: black;
+  display: flex;
+  float: right;
+}
+
+#showBrg {
+  display:flex;
+  text-align: left;
+}
+
+#showBrg li{
+  font-family: var(--brødtekst);
+  background-color: black;
+  color: var(--offwhite);
+
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+
+li {
+  list-style: none;
+  font-size: medium;
+  padding: 2rem;
+}
+
+li:nth-child(odd) {
+  background: white;
+}
+
+li:nth-child(even) {
+  background: white;
+}
+
+#largeDev {
+  display: none;
+}
+
+#praktiskInfo ul{
+  padding-bottom: 40px;
+}
+
+
+
+
+/* video */
+
+#synlig{
+  padding-left: 28%;
+  padding-top: 20px;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+
+/* navbar */
+  #showBrg {
+    display:none;
+  }
+
+  #burger {
+    color: blue;
+    padding: 10px;
+    display: flex;
+    font-size: 2rem;
+  }
+
+}
+
+@media only screen and (max-width: 758px) {
+  /* navbar */
+    #showBrg {
+      display:none;
+    }
+
+    #burger {
+      color: blue;
+      padding: 10px;
+      display: flex;
+      font-size: 2rem;
+    }
+
+  }
+
+
+@media only screen and (min-width: 1000px) {
+
+  #burger {
+    display: none;
+  }
+
+}
